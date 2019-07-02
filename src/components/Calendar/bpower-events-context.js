@@ -36,7 +36,11 @@ const BpowerEventsStore = props => {
     });
 
     useEffect(() => {
-        const link = `https://content.googleapis.com/calendar/v3/calendars/palisada.pl@gmail.com/events?timeMin=${monthFirstDay}&timeMax=${monthLastDay}&key=AIzaSyCTj1UhGgVmeh1tALa6JOsD3Pfr8dqNPAk`;
+        const link = `https://content.googleapis.com/calendar/v3/calendars/${
+            process.env.REACT_APP_ID_PALISADA
+        }/events?timeMin=${monthFirstDay}&timeMax=${monthLastDay}&key=${
+            process.env.REACT_APP_KEY
+        }`;
         axios.get(link).then(res => {
             const arr = [];
             res.data.items.map(item => {
