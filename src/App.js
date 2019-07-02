@@ -5,7 +5,8 @@ import reducer from "./reducer";
 
 import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
-import Calendar from "./components/Calendar/CalendarView";
+import Sidebar from "./components/Sidebar";
+// import Calendar from "./components/Calendar/CalendarView";
 
 function App() {
     const initialState = useContext(Context);
@@ -14,13 +15,13 @@ function App() {
         <Context.Provider value={{ state, dispatch }}>
             <BrowserRouter>
                 <Navbar />
+                <Sidebar />
                 <Switch>
                     <Route
                         path="/"
                         exact
                         render={render => <Homepage {...render} />}
                     />
-                    <Route path="/kalendarz" component={Calendar} />
                 </Switch>
             </BrowserRouter>
         </Context.Provider>

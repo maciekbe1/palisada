@@ -1,0 +1,70 @@
+@import "./Global.scss";
+.navigation {
+    .logo {
+        height: 60px;
+    }
+}
+.sidebar {
+    position: absolute;
+    z-index: 100;
+    transition: all 0.5s linear;
+    height: 100%;
+    background: #6c757d;
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .sidebar-link {
+        .sidebar-icon {
+            i {
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+        .sidebar-text {
+            p {
+                margin: 0;
+                color: #fff;
+            }
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-box {
+            padding: 10px 15px 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .active {
+        .sidebar-link {
+            background: #f8f9fa;
+        }
+        .sidebar-icon {
+            i {
+                color: #b82324;
+            }
+        }
+        .sidebar-text {
+            p {
+                margin: 0;
+                color: #b82324;
+            }
+        }
+    }
+}
+.sidebar-wide {
+    transition: all 0.3s linear;
+    width: 250px;
+}
+.sidebar-narrow {
+    transition: all 0.3s linear;
+    width: 70px;
+}
+.ps {
+    position: fixed;
+    top: 0;
+}
+.BurgerSlider:focus {
+    outline: none;
+}

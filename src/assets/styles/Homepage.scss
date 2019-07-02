@@ -1,0 +1,22 @@
+@import "./Global.scss";
+.home-page {
+    // background: #ededed;
+    .partners {
+        .partners-card {
+            .partners-icon {
+                width: 10rem;
+            }
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                color: $bordo;
+            }
+            .card-footer {
+                &:hover {
+                    animation: flash 0.7s ease-out;
+                }
+            }
+        }
+    }
+}
