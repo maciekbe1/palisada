@@ -12,7 +12,7 @@ export default function Partners() {
                 <div className="col-md">
                     <div className="card mb-3">
                         <div className="row no-gutters text-white bg-secondary">
-                            <div className="col-5 col-md-5">
+                            <div className="col-5 col-md-5 icon">
                                 <img
                                     alt="partners"
                                     className="partners-icon w-100 p-3"
@@ -37,7 +37,7 @@ export default function Partners() {
                 <div className="col-md">
                     <div className="card mb-3">
                         <div className="row no-gutters text-white bg-secondary">
-                            <div className="col-5 col-md-5">
+                            <div className="col-5 col-md-5 icon">
                                 <img
                                     alt="partners"
                                     className="partners-icon w-100 p-3"
@@ -64,7 +64,7 @@ export default function Partners() {
                 <div className="col-md">
                     <div className="card mb-3">
                         <div className="row no-gutters text-white bg-secondary">
-                            <div className="col-5 col-md-5">
+                            <div className="col-5 col-md-5 icon">
                                 <img
                                     alt="partners"
                                     className="partners-icon w-100 p-3"

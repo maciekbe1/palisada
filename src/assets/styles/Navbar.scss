@@ -16,39 +16,73 @@
         }
     }
     .sidebar-link {
+        transition: 0.3s;
         .sidebar-icon {
             i {
                 font-size: 40px;
                 color: #fff;
+                transition: 0.3s;
             }
         }
         .sidebar-text {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
             p {
                 margin: 0;
                 color: #fff;
+                transition: 0.3s;
             }
+        }
+        .sidebar-icon {
+            width: 70px;
             display: flex;
+            justify-content: center;
             align-items: center;
+            padding: 10px;
         }
         .sidebar-box {
-            padding: 10px 15px 10px;
             display: flex;
             justify-content: space-between;
+        }
+        &:hover {
+            background: #f8f9fa;
+            .sidebar-icon {
+                width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+                i {
+                    color: #b82324;
+                }
+            }
+            .sidebar-text {
+                p {
+                    margin: 0;
+                    color: #b82324;
+                }
+            }
         }
     }
     .active {
         .sidebar-link {
             background: #f8f9fa;
-        }
-        .sidebar-icon {
-            i {
-                color: #b82324;
+            .sidebar-icon {
+                width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+                i {
+                    color: #b82324;
+                }
             }
-        }
-        .sidebar-text {
-            p {
-                margin: 0;
-                color: #b82324;
+            .sidebar-text {
+                p {
+                    margin: 0;
+                    color: #b82324;
+                }
             }
         }
     }

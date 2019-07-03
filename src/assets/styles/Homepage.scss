@@ -3,6 +3,11 @@
     // background: #ededed;
     .partners {
         .partners-card {
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             .partners-icon {
                 width: 10rem;
             }

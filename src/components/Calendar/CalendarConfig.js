@@ -26,6 +26,22 @@ const CalendarConfig = props => {
         context.setMonthFirstDay(dateFirstDay);
         context.setMonthLastDay(dateLastDay);
     };
+    const eventBackgroundColor = (event, start, end) => {
+        if (end < new Date()) {
+            return {
+                style: {
+                    backgroundColor: "#b82324"
+                    // opacity: 0.5
+                }
+            };
+        } else {
+            return {
+                style: {
+                    backgroundColor: "#b82324"
+                }
+            };
+        }
+    };
 
     return (
         <Calendar
@@ -39,6 +55,7 @@ const CalendarConfig = props => {
             messages={context.messages}
             culture={"pl-PL"}
             // onSelectEvent={event => eventDetailsInfo(event)}
+            eventPropGetter={eventBackgroundColor}
         />
     );
 };
