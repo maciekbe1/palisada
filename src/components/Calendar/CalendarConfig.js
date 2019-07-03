@@ -30,14 +30,14 @@ const CalendarConfig = props => {
         if (end < new Date()) {
             return {
                 style: {
-                    backgroundColor: "#b82324"
+                    backgroundColor: "#6c757d"
                     // opacity: 0.5
                 }
             };
         } else {
             return {
                 style: {
-                    backgroundColor: "#b82324"
+                    backgroundColor: "#6c757d"
                 }
             };
         }
